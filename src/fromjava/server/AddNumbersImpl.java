@@ -40,6 +40,13 @@
 
 package fromjava.server;
 
+/**
+ * crear el cliente comandos
+wsimport -keep -p fromjava.server.client http://localhost:8080/Example_JAX_WS/IAddNumbers?wsdl
+wsimport -keep -verbose http://localhost:8080/Example_JAX_WS/IAddNumbers?wsdl
+wsimport -d E:\eclipse\workspaces\jaxws-ri -p fromjava.server.client http://localhost:8080/Example_JAX_WS/IAddNumbers?wsdl
+**/
+
 import javax.jws.WebService;
 
 @WebService(endpointInterface = "fromjava.server.IAddNumbers",
